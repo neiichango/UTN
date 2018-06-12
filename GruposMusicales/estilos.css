@@ -73,8 +73,9 @@ nav li{
 
 nav li:hover{
 background: linear-gradient(var(--maincolor),var(--maincolor), #efbbac);
-
-
+background-color: -webkit-linear-gradient: (var(--maincolor),var(--maincolor), #efbbac);
+-moz-linear-gradient: (var(--maincolor),var(--maincolor), #efbbac);
+linear-gradient: (var(--maincolor),var(--maincolor), #efbbac); 	
 }
 nav li a{
 	padding: 8px;
