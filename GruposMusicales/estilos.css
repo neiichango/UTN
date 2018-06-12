@@ -49,6 +49,7 @@ caption{
 
 thead{
 	background-color: #666;
+	-
 }
 tbody{
 	background-color:#fff;
@@ -66,13 +67,13 @@ width: 100%;
 nav li{
 	float: left;
 	width: 25%;
-	background-color: var(--maincolor);
+	background-color: #ed9982;
 	padding: 10px 0px 10px 0px;
 	text-align: center;
 }
 
 nav li:hover{
-background: linear-gradient(var(--maincolor),var(--maincolor), #efbbac);
+background: linear-gradient(#ed9982,#ed9982, #efbbac);
 background-color: -webkit-linear-gradient: (var(--maincolor),var(--maincolor), #efbbac);
 -moz-linear-gradient: (var(--maincolor),var(--maincolor), #efbbac);
 linear-gradient: (var(--maincolor),var(--maincolor), #efbbac); 	
