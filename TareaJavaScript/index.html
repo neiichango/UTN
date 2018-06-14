@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="images/jpg" href="images/Icono.jpg" />
+    <title>Plantilla practica JS</title>
+  <meta charset="utf-8" />
+    
+
+    <script>                   
+      
+    window.onload = function(){
+
+        function clikea(){
+          alert ('Muy bien, has pulsado el botón 1.1');
+        }  
+        document.getElementById('btnMensaje').onclick = clikea;
+
+        document.getElementById("btnSumar").addEventListener("click", Sumar);
+
+        function Sumar(){
+  var suma = parseInt(document.getElementById("No1").value) + parseInt(document.getElementById("No1").value);
+  alert("la suma es " + suma);
+       }
+
+
+
+document.getElementById("rojo").onmouseover = ponerColor;
+    
+      
+        function ponerColor() { 
+          document.body.style.background = "#ff0033";
+        }
+  document.getElementById("rojo").onmouseout = quitarColor;
+    
+      
+        function quitarColor() { 
+          document.body.style.background = "#fff";
+        }
+
+        
+
+
+  
+
+    }
+
+function ponerColorAzul() { 
+          document.body.style.background = "#0066ff";
+        }
+    
+      
+        function quitarColorAzul() { 
+          document.body.style.background = "#fff";
+        }
+            
+    </script>
+    
+</head>
+
+<body id="body">
+    <H1>Practica para estudiantes</H1>
+    <section id="parte1">
+      <H3>Parte 1</H3>  
+        <p>Para cada uno de los siguientes párrafos, mostrar un mensaje utilizando los diferentes métodos mencionados:</p>
+    
+        <p id="btnMensaje" >1.1 Hacer click aquí, mostrar mensaje usando manejo de eventos como propiedades</p>          
+        <p onclick="alert ('Muy bien, has pulsado el botón 1.2');" >1.2 Hacer click aquí, mostrar mensaje usando manejo de eventos en línea</p>            
+        <p onclick="mostrarMensaje()">1.3 Hacer click aquí, mostrar mensaje llamando a función en archivo externo</p>      
+    
+    </section>    
+    <br/>
+  <section id="parte2">
+      <H3>Parte 2</H3>  
+        <p>2.1 Cree una función "Sumar()" donde se sumen 2 valores dados por el usuario, la suma debe realizarse en una función 
+          que muestre el resultado en un mensaje, si los valores no son numéricos debe alertar del error, la función debe
+        llamarse con el método de "addEventListener"</p>
+        <p>
+           Ingrese su número:
+           <input type="text" id="No1" />
+        </p>
+        <p>        
+           Ingrese su número:
+           <input type="text" id="No2" />                
+        </p>    
+        <p>
+           <button id="btnSumar">Sumar</button>
+        </p>
+    </section>    
+    <br/>
+  <section id="parte3">
+      <H3>Parte 3</H3>  
+        <p>3.1 Con el método de manejo de eventos como propiedades, llame a una función que al pasar el mouse sobre el párrafo 
+           que contiene la palabra Rojo, cambie el color del body a rojo. Debe crear la función.</p>
+       
+    <p id="rojo"><b>Rojo</b></p>
+       
+    <p>3.2 Con el método de manejo de eventos en línea, llame a una función que al hacer click sobre el párrafo que contiene la palabra Azul,
+           cambie el color del body a azul. Debe crear la función.</p>
+       
+    <p onmouseover="ponerColorAzul()" onmouseout="quitarColorAzul()"><b>Azul</b></p>      
+  </section>          
+
+  <hr/> 
+  <nav>       
+        <ul>
+            <li><a href="#parte1">Ir a Parte 1</a></li>
+            <li><a href="#parte2">Ir a Parte 2</a></li>
+            <li><a href="#parte3">Ir a Parte 3</a></li>
+      <li><a href= "index.html">Volver a la página principal</a></li>
+        </ul>
+    </nav>
+    <br/><br/><br/>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
