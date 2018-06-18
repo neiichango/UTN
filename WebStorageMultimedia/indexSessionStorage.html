@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function guardarDatos() {
+    sessionStorage.nombre = document.getElementById("nombre").value;
+    sessionStorage.password = document.getElementById("password").value;
+}
+
+function recuperarDatos() {
+    if ((sessionStorage.nombre != undefined) && (sessionStorage.password != undefined)) {
+        document.getElementById("datos").innerHTML = "Nombre: " + sessionStorage.nombre + " Password: " + sessionStorage.password;
+    } else {
+        document.getElementById("datos").innerHTML = "No has introducido tu nombre y tu password";
+    }
+}
+
+function borrar(){
+	
+	document.getElementById("nombre").value = "";
+	document.getElementById("password").value = "";
+}
+
+</script>
+</head>
+<body background="images/back.jpg">
+
+  <div class="ejemplo">
+  
+   <img src= "images/test.jpg" alt="Logo HTML" width="1200" height="500"/></br>
+  
+   <label for="nombre"> Nombre: </label>
+   <input type="text" id="nombre" />
+   
+   <label for="nombre"> Password: </label>
+   <input type="text" id="password" />
+   
+   <input type="button" onclick="guardarDatos()" value="Guardar datos" />
+   
+   <p id="datos"> Pulsa para ver tu nombre y tu password. </p>
+   
+   <input type="button" onclick="recuperarDatos()" value="Recuperar datos" />
+ </div>
+
+</body>
+</html>

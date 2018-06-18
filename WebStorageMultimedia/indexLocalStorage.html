@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function guardarDatos() {
+    localStorage.nombre = document.getElementById("nombre").value;
+    localStorage.password = document.getElementById("password").value;
+}
+
+function recuperarDatos() {
+    if ((localStorage.nombre != undefined) && (localStorage.password != undefined)) {
+        document.getElementById("datos").innerHTML = "Nombre: " + localStorage.nombre + " Password: " + localStorage.password;
+    } else {
+        document.getElementById("datos").innerHTML = "No has introducido tu nombre y tu password";
+    }
+}
+
+function borrar(){
+	
+	document.getElementById("nombre").value = "";
+	document.getElementById("password").value = "";
+}
+
+function reportStorage(evt) {
+alert("El `Storage` fue modificado desde: " + evt.url);
+alert("Se ha actualizado: " + evt.key + 'r' +
+"Antes: " + evt.oldValue + 'r' +
+"Nuevo: " + evt.newValue + 'r' +
+"Hora: " + (new Date(evt.timeStamp)).toLocaleString('es-ES'));
+}
+
+</script>
+
+<style type = "text/css">
+ 
+ body {
+  background-image: url("images/back.jpg");
+  
+  /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: expanded;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+ 
+
+</style>
+</head>
+<body>
+
+  <div class="ejemplo">
+  
+	<img src= "images/maxresdefault.jpg" alt="Logo HTML" width="1200" height="500"/></br>
+  
+   <label for="nombre"> Nombre: </label>
+   <input type="text" id="nombre" />
+   
+   <label for="nombre"> Password: </label>
+   <input type="text" id="password" />
+   
+   <input type="button" onclick="guardarDatos()" value="Guardar datos" />
+   
+   <p id="datos"> Pulsa para ver tu nombre y tu password. </p>
+   
+   <input type="button" onclick="recuperarDatos()" value="Recuperar datos" />
+ </div>
+
+</body>
+</html>
