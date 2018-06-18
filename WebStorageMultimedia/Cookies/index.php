@@ -1,17 +1,16 @@
 <?php
 if(isset($_POST["Submit1"]))
 {
-setcookie("name",$_POST["name"], time() + 3600, "/", "", 0);
-setcookie("age", $_POST["age"], time() + 3600, "/", "", 0);
-setcookie("city", $_POST["city"], time() + 3600, "/", "", 0);
+setcookie("name",$_POST["name"]);
+setcookie("age", $_POST["age"]);
+setcookie("city", $_POST["city"]);
 echo "Cookies Created !!";
 }
- 
 if(isset($_POST["Submit3"]))
 {
-setcookie("name","", time() - 3600, "/", "", 0);
-setcookie("age", "", time() - 3600, "/", "", 0);
-setcookie("city", "", time() - 3600, "/", "", 0);
+setcookie("name","" );
+setcookie("age", "");
+setcookie("city", "");
 } 
 ?>
  
