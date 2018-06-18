@@ -1,0 +1,59 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+
+
+<body>
+
+	<header>
+	<h1 class="text">Web Storage y Multimedia</h1>
+	<nav>
+		<ul>
+			<li><a href="indexSesion.php" class="text">Sesion y Variables de Sesion</a></li>
+			<li><a href="indexCookies.html" class="text">Cookies</a></li>
+			<li><a href="indexWebStorage.html" class="text">HTML5 Web Storage</a></li></ol>
+			<li><a href="indexMultimedia.html" class="text">Multimedia</a></li>
+		</ul>
+	</nav>
+</header>
+<h2>HTML5</h2>
+
+	<h2>Etiquetas para configurar audio en nuestra página HTML5 </h2>
+
+	<h3>Etiqueta audio</h3>
+
+	<audio src="Media\ay-caramba.mp3"controls="true" autoplay="false"></audio>
+
+	<p> Este es el comando que utilizamos para poder visualizar una "barra" para reproducir un sonido en nuestra página web. <b>< audio src="Media\ay-caramba.mp3"controls="true" loop="true" autoplay="false">< /audio></b>. <br>
+	En nuestro caso, hacemos que se muestre la barra de controles y le decimos que no se reproduzca automaticamente.</p>
+
+	<h3>Etiqueta source</h3>
+	<p>Esta etiqueta nos ayudará a maximizar la compatibilidad con otros buscadores. En nuestro caso colocamos dos audios en dos diferentes formatos .mp3 y .ogg</p>
+
+	<audio controls="controls">
+		<source src="Media\homero13.ogg" type="audio/ogg">
+		<source src="Media\homero13.mp3" type="audio/mpeg">	
+	</audio>
+
+
+	<h2>Etiquetas para configurar video en nuestra página HTML5 </h2>
+
+	<h3>Etiqueta video</h3>
+
+	<p>La etiqueta que utilizamos acá es la de video. La cual tiene los atributos de <b>width, height, controls, autoplay y preload</b></p>
+
+	<video src="Media\video.mp4" width="640" height="360" controls preload></video>
+
+	<h3>Etiqueta source</h3>
+	<p>Al igual que en la etiqueta source del audio, esta nos ayuda a maximizar la compatibilidad. Para este ejemplo utilizamos .mp4 y .webm</p>
+	<video width="640" height="360" controls>
+		<source src="Media\video2mp4.mp4" type="video/mp4">
+		<source src="Media\videoWEBM.webm" type="video/webm">
+	</video>
+	
+</body>
+</html>

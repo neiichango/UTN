@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="estilos.css">
+
+      <script type = "text/javascript">
+         <!--
+            function WriteCookie()
+            {
+               if( document.myform.customer.value == "" ){
+                  alert("Enter some value!");
+                  return;
+               }
+               cookievalue= encodeURI(document.myform.customer.value);
+               Cookies.set('name',cookievalue);
+               //document.write ("Setting Cookies : " + "name=" + cookievalue );
+               alert("Mostrando el cookie guardado: " + Cookies.get('name'));
+
+
+
+            }
+         //-->
+      </script>
+      
+   </head>
+   
+   <body>
+
+        <header>
+   <h1 class="text">Web Storage y Multimedia</h1>
+   <nav>
+      <ul>
+         <li><a href="indexSesion.php" class="text">Sesion y Variables de Sesion</a></li>
+         <li><a href="indexCookies.html" class="text">Cookies</a></li>
+         <li><a href="indexWebStorage.html" class="text">HTML5 Web Storage</a></li></ol>
+         <li><a href="index.html" class="text">Multimedia</a></li>
+      </ul>
+   </nav>
+</header>
+   
+   <h2>JQuery</h2>
+
+      <form name="myform" action="">
+         Enter name: <input type="text" name="customer"/>
+         <input type="button" value="Set Cookie" onclick="WriteCookie();"/>
+      </form>
+   
+
+
+
+   <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/js.cookie.js"></script>
+   </body>
+</html>
