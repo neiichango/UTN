@@ -1,0 +1,107 @@
+:root {
+    --maincolor: #ed9982; 
+    background-color: #fff0ed;
+}
+
+.text{
+	font-style: verdana;
+}
+table{
+	border:1px solid #000;
+	border-collapse: collapse;
+}
+
+td{
+	padding: 10px;
+	border:1px solid #000;
+}
+#QueenImg{
+	width: 400px;
+	height: 200px;
+}
+h1{
+	color: #333;
+	size: 20px;
+	
+}
+h2{
+	color: #666;
+	size: 16px;
+}
+th{
+	color: white;
+	size: 12px;
+	background-color: #666;
+	border:1px solid #000;
+}
+a{
+	color: blue;
+	size: 12px;
+}
+p,li{
+	color: #000;
+	size: 12px;
+}
+caption{
+	color: #000;
+	size: 14px;
+}
+
+thead{
+	background-color: #666;
+	-
+}
+tbody{
+	background-color:#fff;
+}
+tfoot{
+	background-color : #ccc;
+}
+nav ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 100%;
+
+}
+nav li{
+	float: left;
+	width: 25%;
+	background-color: #ed9982;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+}
+
+nav li:hover{
+background: linear-gradient(#ed9982,#ed9982, #efbbac);
+background-color: -webkit-linear-gradient: (var(--maincolor),var(--maincolor), #efbbac);
+-moz-linear-gradient: (var(--maincolor),var(--maincolor), #efbbac);
+linear-gradient: (var(--maincolor),var(--maincolor), #efbbac); 	
+}
+nav li a{
+	padding: 8px;
+	color: white;
+	text-decoration-line: none;
+	width: 100%;
+	height: 100%;
+}
+
+header{
+	height: 100px;
+	width: 100%;
+}
+footer{
+	height: 100px;
+	background-color: var(--maincolor);
+	clear: both;
+}
+article{
+	width: 50%;
+		float: left;
+		padding: 0px 0px 20px 0px;
+}
+aside{
+	width: 50%;
+	float: left;
+	padding: 10px 0px 10px 0px;
+}
