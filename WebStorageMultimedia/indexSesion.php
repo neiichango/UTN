@@ -30,5 +30,12 @@ $_SESSION["favanimal"] = "cat";
 echo "Favorite color is " . $_SESSION["favcolor"];
 ?>
 
+<p>el codigo usado</p>
+<img src="images/sesion.JPG" alt="codigo de sesion">
+<br>
+<footer>
+	<a href="Media/practica.docx" download>Descargar Practica</a>
+	<a href="Media/presentacion.pptx" download>Descargar Presentacion</a>
+</footer>
 </body>
 </html>

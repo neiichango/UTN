@@ -36,7 +36,7 @@ setcookie("city", "");
 <h2>PHP</h2>
 
 
-<FORM method="POST" action="firstexample.php">
+<FORM method="POST" action="indexPHP.php">
  
 Enter Name : <input type="text" name="name"> <br/>
 Enter Age : <input type="text" name="age"> <br/>
@@ -47,6 +47,15 @@ Enter City : <input type="text" name="city"> <br/>
 <input type="submit" name="Submit3" value="Delete Cookie">
 </FORM>
  
+
+<p>Codigo usado:</p>
+<figure>
+	<img src="images/cphp1.JPG" alt="codigo1">
+	<img src="images/cphp2.JPG" alt="coodigo2">
+</figure>
+
+
+
 <?php
 if(isset($_POST['Submit2']))
 {
